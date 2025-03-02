@@ -36,3 +36,5 @@ class Messages(Base):
     date = Column(DateTime)
     linkcode = Column(String)
     bodyhash = Column(String)
+
+# **********************

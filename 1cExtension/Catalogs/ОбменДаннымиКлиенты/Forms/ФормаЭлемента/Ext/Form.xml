@@ -1,0 +1,296 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<InputField name="Код" id="1">
+			<DataPath>Объект.Code</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Наименование" id="4">
+			<DataPath>Объект.Description</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="ВидСоединения" id="7">
+			<DataPath>Объект.ВидСоединения</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ВидСоединенияКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ВидСоединенияРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<Pages name="Группа1" id="31">
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="32"/>
+			<ChildItems>
+				<Page name="СтрHTTP" id="33">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>HTTP</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Стр HTTP</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтрHTTPРасширеннаяПодсказка" id="34"/>
+					<ChildItems>
+						<InputField name="HTTPАдрес" id="61">
+							<DataPath>Объект.HTTPАдрес</DataPath>
+							<ContextMenu name="HTTPАдресКонтекстноеМеню" id="62"/>
+							<ExtendedTooltip name="HTTPАдресРасширеннаяПодсказка" id="63"/>
+						</InputField>
+						<InputField name="HTTPЗапрос" id="64">
+							<DataPath>Объект.HTTPЗапрос</DataPath>
+							<ContextMenu name="HTTPЗапросКонтекстноеМеню" id="65"/>
+							<ExtendedTooltip name="HTTPЗапросРасширеннаяПодсказка" id="66"/>
+						</InputField>
+						<Table name="ЗаголовкиHTTP" id="39">
+							<TitleLocation>Top</TitleLocation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.ЗаголовкиHTTP</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ЗаголовкиHTTPКонтекстноеМеню" id="40"/>
+							<AutoCommandBar name="ЗаголовкиHTTPКоманднаяПанель" id="41"/>
+							<ExtendedTooltip name="ЗаголовкиHTTPРасширеннаяПодсказка" id="42"/>
+							<SearchStringAddition name="ЗаголовкиHTTPСтрокаПоиска" id="43">
+								<AdditionSource>
+									<Item>ЗаголовкиHTTP</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ЗаголовкиHTTPСтрокаПоискаКонтекстноеМеню" id="44"/>
+								<ExtendedTooltip name="ЗаголовкиHTTPСтрокаПоискаРасширеннаяПодсказка" id="45"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ЗаголовкиHTTPСостояниеПросмотра" id="46">
+								<AdditionSource>
+									<Item>ЗаголовкиHTTP</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ЗаголовкиHTTPСостояниеПросмотраКонтекстноеМеню" id="47"/>
+								<ExtendedTooltip name="ЗаголовкиHTTPСостояниеПросмотраРасширеннаяПодсказка" id="48"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ЗаголовкиHTTPУправлениеПоиском" id="49">
+								<AdditionSource>
+									<Item>ЗаголовкиHTTP</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ЗаголовкиHTTPУправлениеПоискомКонтекстноеМеню" id="50"/>
+								<ExtendedTooltip name="ЗаголовкиHTTPУправлениеПоискомРасширеннаяПодсказка" id="51"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="ЗаголовкиHTTPНомерСтроки" id="52">
+									<DataPath>Объект.ЗаголовкиHTTP.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ЗаголовкиHTTPНомерСтрокиКонтекстноеМеню" id="53"/>
+									<ExtendedTooltip name="ЗаголовкиHTTPНомерСтрокиРасширеннаяПодсказка" id="54"/>
+								</LabelField>
+								<InputField name="ЗаголовкиHTTPКлюч" id="55">
+									<DataPath>Объект.ЗаголовкиHTTP.Ключ</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ЗаголовкиHTTPКлючКонтекстноеМеню" id="56"/>
+									<ExtendedTooltip name="ЗаголовкиHTTPКлючРасширеннаяПодсказка" id="57"/>
+								</InputField>
+								<InputField name="ЗаголовкиHTTPЗначение" id="58">
+									<DataPath>Объект.ЗаголовкиHTTP.Значение</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ЗаголовкиHTTPЗначениеКонтекстноеМеню" id="59"/>
+									<ExtendedTooltip name="ЗаголовкиHTTPЗначениеРасширеннаяПодсказка" id="60"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="Стр1С" id="35">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>1С</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Стр1 С</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="Стр1СРасширеннаяПодсказка" id="36"/>
+					<ChildItems>
+						<InputField name="СтрокаПодключения" id="10">
+							<DataPath>Объект.СтрокаПодключения</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="СтрокаПодключенияКонтекстноеМеню" id="11"/>
+							<ExtendedTooltip name="СтрокаПодключенияРасширеннаяПодсказка" id="12"/>
+						</InputField>
+						<CheckBoxField name="ЭтоФайловая" id="67">
+							<DataPath>ЭтоФайловая</DataPath>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ЭтоФайловаяКонтекстноеМеню" id="68"/>
+							<ExtendedTooltip name="ЭтоФайловаяРасширеннаяПодсказка" id="69"/>
+						</CheckBoxField>
+						<InputField name="ФайловыйПуть" id="70">
+							<DataPath>ФайловыйПуть</DataPath>
+							<ContextMenu name="ФайловыйПутьКонтекстноеМеню" id="71"/>
+							<ExtendedTooltip name="ФайловыйПутьРасширеннаяПодсказка" id="72"/>
+						</InputField>
+						<InputField name="Сервер" id="79">
+							<DataPath>Сервер</DataPath>
+							<ContextMenu name="СерверКонтекстноеМеню" id="80"/>
+							<ExtendedTooltip name="СерверРасширеннаяПодсказка" id="81"/>
+						</InputField>
+						<InputField name="Порт" id="76">
+							<DataPath>Порт</DataPath>
+							<ContextMenu name="ПортКонтекстноеМеню" id="77"/>
+							<ExtendedTooltip name="ПортРасширеннаяПодсказка" id="78"/>
+						</InputField>
+						<InputField name="База" id="73">
+							<DataPath>База</DataPath>
+							<ContextMenu name="БазаКонтекстноеМеню" id="74"/>
+							<ExtendedTooltip name="БазаРасширеннаяПодсказка" id="75"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+				<Page name="СтрWEB" id="37">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>WEB(SOAP)</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Стр WEB</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтрWEBРасширеннаяПодсказка" id="38"/>
+					<ChildItems>
+						<InputField name="МестоположениеWSDL" id="28">
+							<DataPath>Объект.МестоположениеWSDL</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="МестоположениеWSDLКонтекстноеМеню" id="29"/>
+							<ExtendedTooltip name="МестоположениеWSDLРасширеннаяПодсказка" id="30"/>
+						</InputField>
+						<InputField name="ИмяТочкиПодключения" id="25">
+							<DataPath>Объект.ИмяТочкиПодключения</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ИмяТочкиПодключенияКонтекстноеМеню" id="26"/>
+							<ExtendedTooltip name="ИмяТочкиПодключенияРасширеннаяПодсказка" id="27"/>
+						</InputField>
+						<InputField name="ИмяСервиса" id="22">
+							<DataPath>Объект.ИмяСервиса</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ИмяСервисаКонтекстноеМеню" id="23"/>
+							<ExtendedTooltip name="ИмяСервисаРасширеннаяПодсказка" id="24"/>
+						</InputField>
+						<InputField name="URIПространстваИменСервиса" id="19">
+							<DataPath>Объект.URIПространстваИменСервиса</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="URIПространстваИменСервисаКонтекстноеМеню" id="20"/>
+							<ExtendedTooltip name="URIПространстваИменСервисаРасширеннаяПодсказка" id="21"/>
+						</InputField>
+						<InputField name="Пользователь" id="13">
+							<DataPath>Объект.Пользователь</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ПользовательКонтекстноеМеню" id="14"/>
+							<ExtendedTooltip name="ПользовательРасширеннаяПодсказка" id="15"/>
+						</InputField>
+						<InputField name="Пароль" id="16">
+							<DataPath>Объект.Пароль</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ПарольКонтекстноеМеню" id="17"/>
+							<ExtendedTooltip name="ПарольРасширеннаяПодсказка" id="18"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.ОбменДаннымиКлиенты</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="Сервер" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сервер</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ФайловыйПуть" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Файловый путь</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ЭтоФайловая" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Это файловая</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Порт" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Порт</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="База" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>База</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+</Form>
